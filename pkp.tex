@@ -1,0 +1,57 @@
+\documentclass[13pt]{report} %define document
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[labelformat=empty]{caption}
+\usepackage{enumitem}
+\chapterfont{\centering}
+
+\renewcommand{\arraystretch}{5}
+
+\begin{document} %content to be included in b/w
+\title{\textbf{ LaTeX documentation}}
+\author{\textit{ ICFOSS}}
+\maketitle
+\chapter*{CHAPTER 1}
+
+\section*{section1}
+The \textbf{\textit{first document}} is include in here with the following statements.
+\subsection*{sub1}The second document is include in here with the following statements.
+\subsubsection*{s.1} 
+The third document is include in here with the following statements.
+\chapter*{Chapter 2}
+the figure depicted in \ref{f:1}
+
+\begin{figure}[H]
+\centering   %to center align
+\includegraphics{index.jpeg}
+\caption{Logo} %to insert caption
+\label{f:1}
+\end{figure}
+ 
+\section*{section2}
+The fourth document is include in here with the following statements.
+
+\begin{center}
+\begin{tabular}{|      c      |      c      |      c      |}
+\hline
+Name & Age & Gender \\
+\hline
+pradeep & 20 & male\\
+\hline
+sajith & 19 & male \\
+\hline
+ashik & 25 & male \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Listing of Elements}
+\begin{itemize}
+\item [*]First point
+\item[-] Second point
+\item[=] Third Point
+\end{itemize}
+
+
+\end{document}
